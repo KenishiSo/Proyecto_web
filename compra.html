@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Peluchinchispin</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Compra</h1>
+        <p>Elige tu peluche</p>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#catalogo">Catálogo</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="contacto">
+
+        <h2>Finalizar Compra</h2>
+
+        <form id="formCompra">
+
+            <h3>Selecciona el peluche que quieres comprar</h3>
+
+            <div class="seleccion-peluches">
+
+                <label class="peluche-opcion">
+                    <input type="radio" name="peluche" value="La yo sin saber ni madres">
+
+                    <img src="images.html/1574621.png" alt="Peluche Ni madres">
+
+                    <p>La yo sin saber ni madres</p>
+                    <span>$45.000</span>
+                </label>
+
+                <label class="peluche-opcion">
+                    <input type="radio" name="peluche" value="El conejo inútil">
+
+                    <img src="images.html/D_Q_NP_621630-CBT77592219051_072024-O.png" alt="Peluche conejo">
+
+                    <p>El conejo inútil</p>
+                    <span>$30.000</span>
+                </label>
+
+                <label class="peluche-opcion">
+                    <input type="radio" name="peluche" value="Seiba">
+
+                    <img src="images.html/fategrand-order-chocopuni-plush-toy-artoria-pendragon-saber-good-smile-company-.png" alt="Peluche Seiba">
+
+                    <p>Seiba</p>
+                    <span>$50.000</span>
+                </label>
+
+            </div>
+
+            <input type="text" id="direccion" placeholder="Dirección de envío">
+
+            <input type="number" id="cantidad" placeholder="Cantidad de peluches" min="1">
+
+            <select id="metodoPago">
+                <option value="">Selecciona método de pago</option>
+                <option value="Nequi">Nequi</option>
+                <option value="Daviplata">Daviplata</option>
+                <option value="Tarjeta">Tarjeta</option>
+                <option value="Pago contra entrega">Pago contra entrega</option>
+            </select>
+
+            <textarea id="comentario" placeholder="Comentario especial para tu peluche"></textarea>
+
+            <button type="submit">
+                Confirmar Compra
+            </button>
+
+        </form>
+
+        <button class="volver-btn" onclick="volverInicio()">
+            Volver al Inicio
+        </button>
+
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Peluchinchispin |
+            “Compras innecesarias, felicidad necesaria.”
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

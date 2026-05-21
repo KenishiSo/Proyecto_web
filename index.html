@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluchinchispin</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    
+    <header>
+        <h1>Peluchinchispin</h1>
+        <p>La única tienda donde los peluches tienen más autoestima que tú.</p>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="btn-login" onclick="irLogin()">Iniciar Sesión</button>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-texto">
+            <h2>Peluches tan tiernos que probablemente te juzguen mientras duermes.</h2>
+            <p>
+                Compra increibles peluches con grandes habilidades.
+            </p>
+
+            <button onclick="mensajeBienvenida()">
+                Ver Peluches
+            </button>
+        </div>
+    </section>
+
+    
+    <section id="catalogo">
+
+        <h2 class="titulo">Nuestros Peluches Que necesitas en tu vida</h2>
+
+        <div class="catalogo">
+
+            <div class="card">
+                <img src="images.html/1574621.png" 
+                alt="Ni madres">
+
+                <h3>La yo sin saber ni madres</h3>
+
+                <p>
+                    No sabe absolutamente nada.
+                </p>
+
+                <span>$45.000</span>
+
+                <button onclick="agregarCarrito('Ni madres')">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="images.html/D_Q_NP_621630-CBT77592219051_072024-O.png" alt="Inutil">
+
+                <h3>El conejo inutil</h3>
+
+                <p>
+                    No sirve para nada.
+                </p>
+
+                <span>$30.000</span>
+
+                <button onclick="agregarCarrito('Inutil_bun')">
+                    Agregar al carrito
+                </button>
+            </div>
+
+            
+            <div class="card">
+                <img src="images.html/fategrand-order-chocopuni-plush-toy-artoria-pendragon-saber-good-smile-company-.png" alt="Seiba">
+
+                <h3>Seiba</h3>
+
+                <p>
+                    Se comera absolutamente toda su comida,
+                    dale hamburguesas.
+                </p>
+
+                <span>$50.000</span>
+
+                <button onclick="agregarCarrito('Seiba_plush')">
+                    Agregar al carrito
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section id="contacto" class="contacto">
+
+        <h2>Contáctanos para mas peluches de tu preferencia</h2>
+
+        <form>
+
+            <input type="text" placeholder="Tu nombre">
+
+            <input type="email" placeholder="Tu correo">
+
+            <textarea placeholder="Escribe tus sugerencias"></textarea>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>
+            © 2026 Peluchinchispin |
+            “Dandote cosas mejores de las que tienes desde entonces.”
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

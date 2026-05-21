@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Peluchinchispin</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <section class="login-container">
+
+        <div class="login-box">
+
+            <h1>Peluchinchispin</h1>
+
+            <p>
+                Inicia porque lo necesitas.
+            </p>
+
+            <form id="loginForm">
+
+                <input 
+                    type="text" 
+                    id="usuario"
+                    placeholder="Usuario"
+                >
+
+                <input 
+                    type="password"
+                    id="password"
+                    placeholder="Contraseña"
+                >
+
+                <button type="submit">
+                    Iniciar Sesión
+                </button>
+
+            </form>
+
+            <p class="msg-extra">
+                Tus peluches te esperan.
+            </p>
+
+            <button class="volver-btn" onclick="volverInicio()">
+                Volver al Inicio
+            </button>
+
+        </div>
+
+    </section>
+
+    <script>
+
+       
+
+        document.getElementById("loginForm")
+        .addEventListener("submit", function(event){
+
+            event.preventDefault();
+
+            let usuario = document.getElementById("usuario").value;
+            let password = document.getElementById("password").value;
+
+            if(usuario === "" || password === ""){
+
+                alert("Completa todos los campos.");
+                return;
+            }
+
+            alert(
+                " Bienvenido " + usuario +
+                "\nHas iniciado sesión correctamente."
+            );
+
+            window.location.href = "index.html";
+
+        });
+
+
+
+        function volverInicio(){
+
+            window.location.href = "index.html";
+
+        }
+
+    </script>
+
+</body>
+</html>
