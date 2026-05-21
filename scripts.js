@@ -82,6 +82,8 @@ document.addEventListener("DOMContentLoaded", function(){
             }
 
             alert("Compra completada correctamente. Gracias por comprar en Peluchinchispin.");
+            
+            formCompra.reset();
 
         });
 
